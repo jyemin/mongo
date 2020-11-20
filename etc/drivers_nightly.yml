@@ -760,6 +760,7 @@ buildvariants:
     num_jobs_available: $(grep -c ^processor /proc/cpuinfo)
     use_scons_cache: true
     ext: tgz
+    compress: tar czf
   tags: ["compile-variant"]
   tasks:
   - name: compile
